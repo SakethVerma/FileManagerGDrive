@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Google Drive Uploader</title>
+<meta name="viewport" http-equiv="Content-Type"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+</head>
+<body class="container" style="background: #fff;">
+	<nav class="navbar">
+		<ul class="navbar-nav navbar-right">
+			<li class="nav-item ">FM</li>
+		</ul>
+	</nav>
+	<div class="text-center">
+		<div>
+			<h1 class="display-4">Welcome to file manager</h1>
+		</div>
+		<hr class="my-4">
+		<div class="jumbotron jumbotron-fluid">
+			<input class="btn btn-default btn-arrow-left" id="navigateBack" type="button"
+				value="Prev" /> <br> <br>
+			<table class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Created on</th>
+						<th scope="col">Modifed on</th>
+						<th scope="col">path</th>
+						<th scope="col">action</th>
+					</tr>
+				</thead>
+				<tbody id="selectedFolders">
+				</tbody>
+			</table>
+
+			<form id="imageForm" method="POST" enctype="multipart/form-data">
+				<div class="form-group custom-file">
+					<input type="file" id="file" name="file" class="custom-file-input">
+					<label class="custom-file-label" for="file">Choose file</label>
+				</div>
+				<br> <br>
+				<div class="form-group">
+					<input class="btn btn-warning" id="uploadButton" type="button"
+						value="Upload" /> <input class="btn btn-danger" id="resetButton"
+						type="button" value="Reset" />
+				</div>
+				<output id="selectedFiles"></output>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
